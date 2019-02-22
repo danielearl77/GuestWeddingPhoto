@@ -1,0 +1,569 @@
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
+html {
+    
+}
+
+body {
+    font-family: 'Lora', sans-serif;
+    font-size: 16px;
+}
+
+/* NAV */
+header {
+    width: 100%;
+    background-color: rgb(255,255,255);
+    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+}
+
+header input {
+    margin-top: 15px;
+    margin-right: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #000;
+    background-color: rgb(66,118,68);
+    width: 100px;
+}
+
+header input::placeholder {
+    color: rgba(255,255,255,0.6);
+}
+
+/*
+header button {
+    display: inline-block;
+    outline: none;
+    border: 2px solid #fff;
+    background-color: #fff;
+    color: #000;
+    font-size: 14px;
+    padding: 5px 15px;
+    
+}
+*/
+
+nav {
+    line-height: 60px;
+}
+
+nav a {
+    display: inline-block;
+    padding: 0 20px;
+    text-decoration: none;
+    color: #000;
+}
+
+#menu-burger {
+    display: none;
+}
+
+#wedding-PIN {
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 766px) {
+    #menu-burger {
+        display: inline;
+        float: right;
+        padding: 5px;
+    }
+    
+    nav {
+        display: none;
+        line-height: 40px;
+        text-align: center;
+    }
+    
+    nav a {
+        
+        display: block;
+    }
+    
+    .center-pin-input {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 766px) {
+    nav {
+        display: block;
+    }
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+.ad-bar {
+
+    margin: 10px auto;
+    padding: 5px;
+}
+
+.nav-bar {
+    background-color: rgb(66,118,68);
+    min-height: 80px;
+    padding: 10px;
+}
+
+.nav-bar img {
+    height: 60px;
+    vertical-align: middle;
+}
+
+section {
+    width: 100%:
+}
+
+
+
+/* Typeography */
+h1 {
+    font-size: 50px;
+    font-weight: 700;
+    color: rgb(66,118,68);
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    margin: 5px 0;
+}
+
+h4 {
+    
+}
+
+h5 {
+    
+}
+
+p {
+    
+}
+
+footer {
+    height: 250px;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 80px;
+}
+
+footer a {
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 14px;
+    color: #fff;
+}
+
+footer img {
+    padding: 5px;
+}
+
+footer p {
+    font-size: 14px;
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* ID */
+#welcome {
+    min-height: 400px;
+    background-image: url(../images/48779427.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#twitter-link:hover {
+    cursor: pointer;
+}
+
+#welcome div {
+    padding-top: 180px;
+    padding-bottom: 50px;
+}
+
+#welcome h1, h2 {
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    padding: 5px;
+}
+
+#about {
+    width: 70%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+#about p {
+    text-align: justify;
+    padding: 5px;
+}
+
+#sign-in {
+    width: 100%;
+    background-color: gainsboro;
+    padding: 40px 0;
+}
+
+#sign-in-error, #sign-up-error {
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    color: #da4167;
+}
+
+#sign-in a {
+    text-decoration: none;
+    color: #da4167;
+/*    color: rgba(0,0,0,0.7);*/
+}
+
+#sign-in a:hover {
+/*    color: #da4167;*/
+    color: rgba(0,0,0,0.7);
+}
+
+#contact {
+    width: 100%;
+    background-color: gainsboro;
+    padding: 40px 0;
+}
+
+#help {
+    width: 70%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+#help p {
+    text-align: justify;
+    padding: 5px;
+}
+
+#legal {
+    width: 70%;
+    margin: 40px auto;
+}
+
+#legal p {
+    text-align: justify;
+    padding: 5px;
+}
+
+#legal ul {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+#legal li {
+    margin-left: 25px;
+}
+
+#upload {
+    height: 400px;
+    background-image: url(../images/48779427.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#upload div {
+    padding-top: 30px;
+}
+
+#upload-photos-form p {
+    text-align: center;
+    padding: 2px;
+/*    color: red;*/
+}
+
+
+#user-management {
+    min-height: 400px;
+    background-color: gainsboro;
+}
+
+#user-details {
+    position: relative;
+}
+
+#user-details, #user-actions {
+    width: 70%;
+    margin: 40px auto;
+    background-color: #fff;
+   
+}
+
+#user-actions p {
+    text-align: justify;
+    padding: 5px 0;
+}
+
+#action-message {
+    text-align: center;
+}
+
+#guest-image-thumbs {
+    min-height: 450px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-image: url(../images/48779427.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#uploaded-photos {
+    width: 80%;
+    margin: 0 auto;   
+}
+
+#uploaded-photos div {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+
+#uploaded-photos p {
+    text-align: center;
+}
+
+#download-photos-button {
+    width: 150px!important;
+}
+
+#cancel-changes-button {
+    display: none;
+}
+
+#pin-warning {
+    position: fixed;
+/*    top: 70px;*/
+    top: 152px;
+    right: 50px;
+    background: #fff;
+    min-width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    display: none;
+    text-align: center;
+    color: #da4167;
+    font-size: 14px;
+}
+
+#pwd-change-box, #close-account-box {
+    display: none;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    right: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #000;
+    background: gainsboro;
+}
+
+#close-account-box p {
+    text-align: center;
+    padding: 5px;
+}
+
+#pwd-change-box input, #close-account-box input {
+    background-color: gainsboro;
+    color: #000;
+}
+
+#close-account-box input {
+    width: 100%;
+}
+
+#weddingPin {
+    color: rgb(66,118,68);
+}
+
+#contact-thanks {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+#error-message {
+    min-height: 450px;
+    padding-top: 50px;
+    background-image: url(../images/48779427.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#error-message div {
+    width: 70%;
+    margin: 0 auto;
+    padding: 40px;
+    background: rgba(255,255,255,0.7);
+}
+
+#error-message h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #da4167;
+    text-shadow: none !important;
+}
+
+#error-message p {
+    text-align: center;
+    padding: 10px;
+}
+
+/* CLASS */
+.code {
+    font-family: monospace;
+}
+
+.button-disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.error {
+    color: #da4167;
+}
+
+.no-img {
+    width: 10px;
+    height: 10px;
+    padding: 10px;
+}
+
+.card {
+    min-height: 200px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-msg-box {
+    min-height: 80px !important;
+}
+
+.terms-box {
+    width: 20px !important; 
+}
+
+.card label {
+    display: inline-block;
+    width: 35%;
+    text-align: right;
+}
+.card input {
+    display: inline-block;
+    width: 55%;
+    margin: 5px;
+    padding: 2px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgb(66,118,68);
+}
+
+.card textarea {
+    width: 95%;
+    height: 100px;
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid rgb(66,118,68);
+}
+
+.sign-button {
+    display: inline-block;
+    outline: none;
+    border: none;
+    background-color: rgb(66,118,68);
+    border: 2px solid rgb(66,118,68);
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 16px;
+    margin: 5px;
+}
+
+.sign-button:hover {
+    background-color: #fff;
+    border: 2px solid rgb(66,118,68);
+    color: #000;
+}
+
+.warn-button {
+    display: inline-block;
+    outline: none;
+    border: none;
+    background-color: #ED7D3A;
+    border: 2px solid #ED7D3A;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 16px;
+    margin: 5px;
+}
+
+.warn-button:hover {
+    background-color: #fff;
+    border: 2px solid #ED7D3A;
+    color: #000;
+}
+
+.sign-up-text {
+    font-size: 14px;
+}
+
+.photo-yes {
+    color: rgb(66,118,68);
+}
+
+.photo-no {
+    color: #da4167 !important;
+}
+
+.header-button {
+    display: inline-block;
+    outline: none;
+    border: none;
+    background-color: #fff;
+    color: #000;
+    font-size: 14px;
+    padding: 8px 16px;
+}
+
+.header-button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.photo-thumb {
+    width: 150px;
+    height: auto;
+    border: 1px solid #000;
+    margin: 10px 20px;
+}
+
+.legal-small {
+    font-size: 14px;
+    font-weight: bold;
+}
+

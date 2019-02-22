@@ -1,0 +1,80 @@
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="column-"] {
+    width: 100%;
+    float: left;
+    padding: 1px;
+}
+
+@media only screen and (min-width: 600px) {
+    .column-m-1 {width: 8.33%;}
+    .column-m-2 {width: 16.66%;}
+    .column-m-3 {width: 25%;}
+    .column-m-4 {width: 33.33%;}
+    .column-m-5 {width: 41.66%;}
+    .column-m-6 {width: 50%;}
+    .column-m-7 {width: 58.33%;}
+    .column-m-8 {width: 66.66%;}
+    .column-m-9 {width: 75%;}
+    .column-m-10 {width: 83.33%;}
+    .column-m-11 {width: 91.66%;}
+    .column-m-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+    .column-1 {width: 8.33%;}
+    .column-2 {width: 16.66%;}
+    .column-3 {width: 25%;}
+    .column-4 {width: 33.33%;}
+    .column-5 {width: 41.66%;}
+    .column-6 {width: 50%;}
+    .column-7 {width: 58.33%;}
+    .column-8 {width: 66.66%;}
+    .column-9 {width: 75%;}
+    .column-10 {width: 83.33%;}
+    .column-11 {width: 91.66%;}
+    .column-12 {width: 100%;}
+}
+
+
+@media only screen and (max-width: 999px) {
+    nav a {
+        padding: 0 10px !important;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    nav a {
+        padding: 0 5px !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    nav a {
+        padding: 0 5px!important;
+    }
+    
+    #user-details, #user-actions {
+        width: 85% !important;
+    }
+    
+    #uploaded-photos {
+        width: 95% !important;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    #user-details, #user-actions {
+        width: 90% !important;
+    }  
+}
+
