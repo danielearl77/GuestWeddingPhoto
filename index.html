@@ -11,15 +11,7 @@
         <link rel="stylesheet" type="text/css" href="css/gwp-resp.css">
 		<link rel="stylesheet" type="text/css" href="css/gwp-style.css">
 		<title>Guest Wedding Photo</title>
-        <script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-		  ga('create', 'UA-74704675-2', 'auto');
-		  ga('send', 'pageview');
-		</script>
+        
         <script src="js/jquery-1.11.3.min.js"></script>
         <script>$(document).ready(function(){$("#upload-photo").click(function(){function c(){$("#pin-warning").fadeOut()}var e=window.pageYOffset,a=$("#upload-photo").position().top,n=$("#upload-photo").outerHeight(),t=a+n+10,r=t-e;$("#pin-warning").css("top",r),$("#pin-warning").hide();var i=document.getElementById("upload-photo");i.innerHTML="Working...";var o=$("#wedding-PIN").val(),s=Number(o);if(0===s||isNaN(o))$("#pin-warning").show(),i.innerHTML="Upload Photo",setTimeout(c,3e3);else{var l="&pin="+o;$.ajax({type:"POST",url:"php/setpin.php",data:l,cache:!1,success:function(e){window.location.assign("php/upload.php")}})}})}),$(document).ready(function(){$("#sign-in-button").click(function(){var e=document.getElementById("sign-in-button");e.innerHTML="Working...";var a=$("#userName").val(),n=$("#userPwd").val(),t="&user="+a+"&pwd="+n;$.ajax({type:"POST",url:"php/signin.php",data:t,cache:!1,success:function(a){"valid"===a?window.location.assign("php/signedin.php"):(e.innerHTML="Sign In",$("#sign-in-error").text("Check username and password are correct and try again."))}})})}),$(document).ready(function(){$("#sign-up-button").click(function(){var e=document.getElementById("sign-up-button");e.innerHTML="Working...";var a=$("#firstName").val(),n=$("#lastName").val(),t=$("#emailAddress").val(),r=$("#password").val(),i=document.getElementById("signup-terms-box").checked,o="&firstName="+a+"&lastName="+n+"&email="+t+"&pwd="+r+"&terms="+i;$.ajax({type:"POST",url:"php/signup.php",data:o,cache:!1,success:function(a){console.log(a),console.log(i),"fail"===a?(e.innerHTML="Sign Up",$("#sign-up-error").text("Check all details have been entered, and the terms and conditions box ticked, and try again.")):"Old-Email"===a?(e.innerHTML="Sign Up",$("#sign-up-error").text("This email address has already been used to register with us.  Please check and try again.")):"error"===a?$("#sign-up-error").text("ERROR: Something has gone wrong creating your account, please check all details are correct and try again. If you get this error again please contact us."):window.location.assign("php/signedin.php")}})})}),$(document).ready(function(){$("#send-message").click(function(){var e=$("#form-name").val(),a=$("#form-email").val(),n=$("#form-message").val(),t="&name="+e+"&email="+a+"&message="+n;$.ajax({type:"POST",url:"php/contact.php",data:t,cache:!1,success:function(e){$("#form-name").attr("placeholder","Name").val(""),$("#form-email").attr("placeholder","Email").val(""),$("#form-message").attr("placeholder","Message").val(""),"sent"===e?($("#contact-thanks").text("Thanks for getting in touch."),$("#contact-thanks").removeClass("error")):"missing"===e?($("#contact-thanks").text("Please complete the form. All boxes must be completed."),$("#contact-thanks").addClass("error")):"invalid"===e&&($("#contact-thanks").text("Please enter a valid name / email address."),$("#contact-thanks").addClass("error"))}})})}),$(document).ready(function(){$("#menu-burger").click(function(){$("nav").toggle()})});</script>
     </head>
@@ -31,16 +23,7 @@
             <div class="row">
                 <div class="column-12">
                     <div class="ad-bar">
-                        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                        <!-- guestweddingphoto -->
-                        <ins class="adsbygoogle"
-                             style="display:block"
-                             data-ad-client="ca-pub-1798485712270431"
-                             data-ad-slot="3825578107"
-                             data-ad-format="auto"></ins>
-                        <script>
-                        (adsbygoogle = window.adsbygoogle || []).push({});
-                        </script> 
+                        
                     </div>
                 </div>
             </div>
